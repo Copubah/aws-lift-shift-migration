@@ -52,7 +52,7 @@ This project automates the migration of traditional web applications to AWS usin
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/YOUR_USERNAME/aws-lift-shift-migration.git
+   git clone https://github.com/Copubah/aws-lift-shift-migration.git
    cd aws-lift-shift-migration
    ```
 
