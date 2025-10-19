@@ -8,7 +8,7 @@ This project automates the migration of traditional web applications to AWS usin
 
 ## Architecture
 
-![Architecture Overview](./ARCHITECTURE.md)
+View the detailed [Architecture Documentation](./ARCHITECTURE.md) for comprehensive diagrams and technical specifications.
 
 ### Key Components
 - VPC: Multi-AZ networking with public/private subnets
