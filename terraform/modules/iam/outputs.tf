@@ -1,0 +1,29 @@
+output "ec2_role_arn" {
+  description = "ARN of the EC2 IAM role"
+  value       = aws_iam_role.ec2_role.arn
+}
+
+output "ec2_role_name" {
+  description = "Name of the EC2 IAM role"
+  value       = aws_iam_role.ec2_role.name
+}
+
+output "ec2_instance_profile_name" {
+  description = "Name of the EC2 instance profile"
+  value       = aws_iam_instance_profile.ec2_profile.name
+}
+
+output "ec2_instance_profile_arn" {
+  description = "ARN of the EC2 instance profile"
+  value       = aws_iam_instance_profile.ec2_profile.arn
+}
+
+output "dms_vpc_role_arn" {
+  description = "ARN of the DMS VPC role"
+  value       = aws_iam_role.dms_vpc_role.arn
+}
+
+output "dms_cloudwatch_logs_role_arn" {
+  description = "ARN of the DMS CloudWatch logs role"
+  value       = aws_iam_role.dms_cloudwatch_logs_role.arn
+}

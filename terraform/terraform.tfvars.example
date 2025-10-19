@@ -1,0 +1,43 @@
+# Example Terraform variables file
+# Copy this to terraform.tfvars and customize for your environment
+
+# Project Configuration
+project_name = "lift-shift-migration"
+environment  = "dev"
+owner        = "cloud-engineering-team"
+cost_center  = "engineering"
+
+# AWS Configuration
+aws_region = "us-east-1"
+
+# Network Configuration
+vpc_cidr = "10.0.0.0/16"
+
+# Database Configuration
+db_username         = "admin"
+db_instance_class   = "db.t3.micro"
+db_allocated_storage = 20
+
+# EC2 Configuration
+instance_type   = "t3.medium"
+ami_id         = "ami-0c02fb55956c7d316"  # Amazon Linux 2023 - update for your region
+key_pair_name  = "your-key-pair-name"
+
+# Source Database (for migration)
+source_db_endpoint = "192.168.1.100"
+source_db_username = "root"
+source_db_password = "your-source-db-password"
+
+# Monitoring Configuration
+enable_detailed_monitoring = true
+log_retention_days        = 14
+
+# Backup Configuration
+backup_retention_period = 7
+backup_window          = "03:00-04:00"
+maintenance_window     = "sun:04:00-sun:05:00"
+
+# Auto Scaling Configuration
+min_size         = 2
+max_size         = 6
+desired_capacity = 2

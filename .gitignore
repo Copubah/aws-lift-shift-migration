@@ -1,0 +1,42 @@
+# Terraform files
+*.tfstate
+*.tfstate.*
+*.tfvars
+!terraform.tfvars.example
+.terraform/
+.terraform.lock.hcl
+crash.log
+crash.*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+deployment.log
+health_report_*.txt
+outputs.json
+
+# Backup files
+*.backup
+*.bak
+backups/
+
+# Temporary files
+*.tmp
+*.temp
+.env
+
+# AWS credentials
+.aws/
+credentials
+
+# SSH keys
+*.pem
+*.key
+
+# Application specific
+POST_DEPLOYMENT.md
